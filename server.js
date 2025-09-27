@@ -8,6 +8,16 @@ app.use(express.json());
 
 const numerosAutorizados = {
   "573046384844": "WA-605",
+  "573218694585": "WA-606",
+  "573227541004": "WA-607",
+  "573161521619": "WA-608",
+  "573137954501": "WA-609",
+  "573227543459": "WA-610",
+  "573142394629": "WA-611",
+  "573137289058": "WA-612",
+  "3227542250": "WA-613",
+  "573114125233": "WA-614",
+  "573163324703": "WA-615"
 };
 
 app.post("/api/v1/validate", (req, res) => {
@@ -71,20 +81,4 @@ app.post("/api/v1/validate", (req, res) => {
 app.listen(port, () => {
   console.log(`✅ Servidor de validación corriendo en http://localhost:${port}`);
 });
-app.get("/app/wm/demo/lic/", (req, res) => {
-  res.json({
-    status: "success",
-    message: "",
-    data: {
-      remainingdays: 365,
-      expires_on: "2026-02-15",
-      mobile: req.query.phonenumber || "573000000000"
-    },
-    set: "set",
-    SOAP: "KzkxOTA0OTc0MDQzMQ==",
-    reviewlink: "https://chrome.google.com/webstore/detail/wa-biz-free-bulk-sender/njlokjfmljicmjpongdkpgkpcemppmbn/review",
-    deactivated: false
-  });
-});
-
-
+ç
