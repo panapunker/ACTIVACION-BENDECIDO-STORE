@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 const numerosAutorizados = {
-  "573046384844": "WA-605"
+  "573046384844": "WA-605",
 };
 
 app.post("/api/v1/validate", (req, res) => {
@@ -73,3 +73,4 @@ app.listen(port, () => {
 });
 
 ç
+
