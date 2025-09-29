@@ -8,6 +8,7 @@ app.use(express.json());
 
 const numerosAutorizados = {
   "573046384844": "WA-605",
+  "573145711350": "WA-605",
 };
 
 app.post("/api/v1/validate", (req, res) => {
@@ -73,5 +74,6 @@ app.listen(port, () => {
 });
 
 ç
+
 
 
